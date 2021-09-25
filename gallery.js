@@ -52,8 +52,6 @@ refs.gallery.insertAdjacentHTML("afterbegin", markup)
 refs.gallery.addEventListener('click', onClickGalleryitem)
 
 refs.modal.addEventListener('click', e => {
-  if (e.target.dataset.action === 'prev-image') onPrevImage();
-  if (e.target.dataset.action === 'next-image') onNextImage();
   if (e.target.classList.contains('lightbox__overlay') ||
     e.target.dataset.action === 'close-lightbox')
     onCloseModal();
